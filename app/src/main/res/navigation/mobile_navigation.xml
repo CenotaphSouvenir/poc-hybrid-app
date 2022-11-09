@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_native_android">
+
+    <fragment
+        android:id="@+id/navigation_native_android"
+        android:name="com.example.hybriddemo.ui.nativeandroid.NativeFragment"
+        android:label="@string/title_native_android"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_react_native"
+        android:name="com.example.hybriddemo.ui.reactnative.ReactNativeFragment"
+        android:label="@string/title_react_native"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_flutter"
+        android:name="com.example.hybriddemo.ui.flutter.FlutterFragment"
+        android:label="@string/title_flutter"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
